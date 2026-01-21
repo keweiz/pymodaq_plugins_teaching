@@ -75,7 +75,7 @@ class DAQ_0DViewer_Photodiode(DAQ_Viewer_base):
         if self.is_master:
             self.controller = Spectrometer()  #instantiate you driver with whatever arguments are needed
             self.controller.open_communication() # call eventual methods
-            initialized = self.controller.open_communication()  # TODO
+            initialized = self.controller.open_communication()
         else:
             self.controller = controller
             initialized = True
